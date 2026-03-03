@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart - E-Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light px-3">
+    <a class="navbar-brand" href="index.html">E-Shop</a>
+    <div class="ms-auto">
+      <span id="user-display" class="me-2"></span>
+      <button id="logout-btn" class="btn btn-danger btn-sm">Logout</button>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h2>Your Cart</h2>
+    <div id="cart-area"></div>
+
+    <div class="mt-4">
+      <h5>Shipping Address</h5>
+      <textarea id="address" class="form-control" rows="3" placeholder="Enter shipping address"></textarea>
+      <button id="place-order" class="btn btn-primary mt-3">Place Order</button>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

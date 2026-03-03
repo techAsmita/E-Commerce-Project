@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - E-Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark px-3">
+    <a class="navbar-brand" href="index.html">Admin Panel</a>
+    <div class="ms-auto">
+      <span id="user-display" class="me-2 text-white"></span>
+      <button id="logout-btn" class="btn btn-danger btn-sm">Logout</button>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h3>Add Product</h3>
+    <form id="addProductForm" class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" name="name" placeholder="Product name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="number" step="0.01" class="form-control" name="price" placeholder="Price" required>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" name="description" placeholder="Description"></textarea>
+      </div>
+      <div class="col-md-4">
+        <input type="number" class="form-control" name="stock" placeholder="Stock" value="0">
+      </div>
+      <div class="col-md-8">
+        <input type="text" class="form-control" name="image" placeholder="Image URL">
+      </div>
+      <div class="col-12">
+        <button class="btn btn-success">Add Product</button>
+      </div>
+    </form>
+
+    <hr>
+    <h3 class="mt-4">Products</h3>
+    <div id="admin-products"></div>
+
+    <hr>
+    <h3 class="mt-4">All Orders</h3>
+    <div id="admin-orders"></div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

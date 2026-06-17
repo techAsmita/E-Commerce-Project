@@ -1,109 +1,95 @@
-# Full Stack E-Commerce Web Application
+# 🛒 Full Stack E-Commerce Web Application
 
-## Project Overview
+A fully functional e-commerce platform with separate user and admin modules — built with HTML/CSS/JS, Bootstrap, Node.js, PHP, and MySQL.
 
-A dynamic and fully functional full stack e-commerce web application built using HTML, CSS, JavaScript, Bootstrap, Node.js, PHP, and MySQL. 
-
-The platform enables users to browse products, manage shopping carts, and place orders, while administrators can manage inventory and monitor transactions.
-
-This project simulates a real-world online retail system with complete frontend, backend, and database integration.
+🔗 **GitHub:** [github.com/techAsmita](https://github.com/techAsmita)
 
 ---
 
-## Core Features
+## ✨ Features
 
-### User Module
-- User Registration and Login
-- Secure Authentication
-- Browse Products by Category
-- Search Products
-- Add to Cart and Remove from Cart
-- Update Product Quantity
-- Checkout and Order Placement
-- View Order History
+### 👤 User
+- Register, login, and secure authentication
+- Browse and search products by category
+- Add/remove items from cart, update quantities
+- Checkout and place orders
+- View order history
 
-### Admin Module
-- Add, Update, and Delete Products
-- Manage Categories
-- Inventory Management
-- View and Process Orders
-- Manage Users
+### 🔧 Admin
+- Add, edit, and delete products and categories
+- Inventory management
+- View and process orders
+- Manage users
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-### Frontend
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap
-
-### Backend
-- Node.js
-- PHP
-
-### Database
-- MySQL
+| Layer | Tech |
+|---|---|
+| Frontend | HTML5, CSS3, JavaScript, Bootstrap |
+| Backend | Node.js, PHP |
+| Database | MySQL |
+| Local Server | XAMPP |
 
 ---
 
-## System Architecture
+## 🗄️ Database Schema
 
-Client (Frontend)  
-→ Backend Server (Node.js / PHP)  
-→ MySQL Database  
+**Tables:** `users` · `products` · `categories` · `orders` · `cart`
 
-The frontend communicates with backend scripts, which handle business logic and interact with the database for persistent storage.
-
----
-
-## Database Design
-
-Main Tables:
-- Users
-- Products
-- Categories
-- Orders
-- Cart
-
-Relationships:
-- One user can place multiple orders
-- One order can contain multiple products
+**Key relationships:**
+- One user → many orders
+- One order → many products (via cart)
 - Admin manages products and categories
 
 ---
 
-## Installation and Setup
+## ⚙️ Local Setup
 
-1. Clone the repository
+```bash
+# 1. Clone the repository
+git clone https://github.com/techAsmita/ecommerce-project.git
+cd ecommerce-project
 
-git clone https://github.com/yourusername/ecommerce-project.git
+# 2. Import the database
+# Open phpMyAdmin → import the provided .sql file
+# Update DB credentials in the config file
 
-2. Configure Database
-- Import the provided SQL file into MySQL
-- Update database credentials in configuration files
+# 3. Start the server
+# Option A: Start XAMPP (Apache + MySQL)
+# Option B: node server.js
 
-3. Run the Application
-- Start local server (XAMPP or Node server)
-- Open the application in browser
-
----
-
-## Future Improvements
-
-- Payment Gateway Integration
-- Product Reviews and Ratings
-- Recommendation System
-- Cloud Deployment
-- Docker Support
+# 4. Open in browser
+# http://localhost/ecommerce-project
+```
 
 ---
 
-## Learning Outcomes
+## 🗺️ Architecture
 
-- Full stack web development
-- RESTful API integration
-- Authentication and authorization
-- Relational database design
-- Real-world project architecture
+```
+Browser (HTML/CSS/JS + Bootstrap)
+        ↓
+Backend (Node.js / PHP)
+        ↓
+MySQL Database
+```
+
+---
+
+## 🔮 Planned Improvements
+
+- Payment gateway integration
+- Product reviews and ratings
+- Recommendation system
+- Cloud deployment + Docker support
+
+---
+
+## 👩‍💻 Author
+
+**Asmita**  
+B.E. Computer Engineering — Thapar Institute of Engineering and Technology  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-techasmita-blue)](https://www.linkedin.com/in/techasmita/)
+[![GitHub](https://img.shields.io/badge/GitHub-techAsmita-black)](https://github.com/techAsmita)
